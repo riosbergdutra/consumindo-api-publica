@@ -5,5 +5,7 @@ async function getAdvice() {
    // console.log(data.slip.advice)
     document.getElementById('advice').innerHTML = data.slip.advice;
 }
-
-getAdvice();
+let botaoAdvice = document.getElementById("get-advice")
+botaoAdvice.addEventListener("click", function{
+    getAdvice();
+})
